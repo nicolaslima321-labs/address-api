@@ -1,4 +1,33 @@
 {
-  "name": "tech-guarantors-test",
-  "packageManager": "yarn@4.5.2"
+  "name": "address-validation-api",
+  "version": "1.0.0",
+  "description": "API for validating and standardizing US property addresses",
+  "main": "src/index.js",
+  "type": "module",
+  "packageManager": "yarn@4.5.2",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' yarn jest",
+    "test:watch": "NODE_OPTIONS='--experimental-vm-modules' yarn jest --watch"
+  },
+  "keywords": [
+    "address",
+    "validation",
+    "api",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
 }
